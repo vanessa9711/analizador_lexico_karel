@@ -107,7 +107,9 @@ class Lexer:
 
     # Objeto de inicio
     inicio = Inicio()
-    elementos = inicio.abrir_archivo()
+    print ("ingrese la ruta del archivo")
+    ruta = input()
+    elementos = inicio.abrir_archivo(ruta)
     impresion =""
     linea = [" "]
 
@@ -132,3 +134,4 @@ class Lexer:
     inicio.escribir_archivo(impresion)
     
 lexer = Lexer()
+
