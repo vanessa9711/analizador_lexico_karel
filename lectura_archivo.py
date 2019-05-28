@@ -1,9 +1,9 @@
 class Inicio:
 
     """ ABRIR ARCHIVOS """
-    def abrir_archivo(self):
+    def abrir_archivo(self, ruta):
         #Abrir .txt con lexico a analizar
-        expresiones = open("karel.js")
+        expresiones = open(ruta)
         return expresiones
 
     """ AGREGAR EL RESULTADO AL ARCHIVO """   
